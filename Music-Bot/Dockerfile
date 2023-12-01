@@ -18,7 +18,8 @@ RUN apt-get update && apt-get install -y git \
 
 # Install any dependencies
 RUN npm install
-
+RUN npm run update
+RUN npm run deploy
 # Set environment variables
 ENV TOKEN=your_discord_bot_token
 
@@ -26,4 +27,4 @@ ENV TOKEN=your_discord_bot_token
 EXPOSE 8080
 
 # Run the application
-command: ["npm", "run", "${ENABLE:-start}"]
+command: ["npm", "run", "start"]

@@ -8,6 +8,7 @@ RUN apt-get update && apt-get install -y git \
     && git clone https://github.com/wtfnotavailable/Discord-MusicBot.git .
 
 # Install any dependencies
+RUN ls
 RUN npm i -g
 
 # Set environment variables

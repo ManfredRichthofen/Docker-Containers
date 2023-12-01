@@ -33,7 +33,7 @@ jobs:
       # with sigstore/fulcio when running outside of PRs.
       id-token: write
     defaults:
-      run:
+      env:
         working-directory: ./Music-Bot
     steps:
       - name: Checkout repository

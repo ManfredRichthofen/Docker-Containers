@@ -1,11 +1,11 @@
 FROM node:20
 
 # Set the working directory to /app
-WORKDIR /djs-bot
+WORKDIR /Discord-MusicBot/djs-bot
 
 # Clone the Discord MusicBot repository
 RUN apt-get update && apt-get install -y git \
-    && git clone https://github.com/wtfnotavailable/Discord-MusicBot.git
+    && git clone https://github.com/wtfnotavailable/Discord-MusicBot.git .
 
 # Install any dependencies
 RUN npm i -g

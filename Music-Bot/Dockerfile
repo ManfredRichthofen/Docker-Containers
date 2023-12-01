@@ -8,7 +8,7 @@ RUN apt-get update && apt-get install -y git \
     && git clone https://github.com/wtfnotavailable/Discord-MusicBot.git
 
 # Install any dependencies
-RUN npm install
+RUN npm i -g
 
 # Set environment variables
 ENV TOKEN=your_discord_bot_token

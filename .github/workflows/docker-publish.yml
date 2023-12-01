@@ -32,9 +32,7 @@ jobs:
       # This is used to complete the identity challenge
       # with sigstore/fulcio when running outside of PRs.
       id-token: write
-    defaults:
-      env:
-        working-directory: ./Music-Bot
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
@@ -75,6 +73,7 @@ jobs:
       - name: Build and push Docker image
         id: build-and-push
         uses: docker/build-push-action@0565240e2d4ab88bba5387d719585280857ece09 # v5.0.0
+        working-directory: ./Music-Bot
         with:
           context: .
           push: ${{ github.event_name != 'pull_request' }}

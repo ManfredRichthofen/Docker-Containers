@@ -27,4 +27,4 @@ ENV TOKEN=your_discord_bot_token
 EXPOSE 8080
 
 # Run the application
-command: ["npm", "run", "start"]
+CMD ["npm", "run", "start"]

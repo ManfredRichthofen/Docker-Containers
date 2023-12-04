@@ -1,7 +1,7 @@
 FROM node:20
 
 # Set the working directory to /app
-WORKDIR /djs-bot
+WORKDIR ./djs-bot
 
 RUN apt-get update -y && \
     apt-get install -y \

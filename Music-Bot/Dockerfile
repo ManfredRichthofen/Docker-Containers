@@ -18,7 +18,7 @@ RUN apt-get update && \
 RUN git clone https://github.com/wtfnotavailable/Discord-MusicBot /download
 
 # Install any dependencies
-RUN cp -a /download/. /app/
+RUN cp -a /download/djs-bot/. /app/
 RUN ls
 RUN ls /
 RUN ls /app

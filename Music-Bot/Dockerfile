@@ -15,7 +15,7 @@ RUN apt-get update && \
     git
 
 # Clone the Discord MusicBot repository
-RUN git clone https://github.com/wtfnotavailable/Discord-MusicBot /download
+RUN git clone https://github.com/ManfredRichthofen/Discord-MusicBot.git /download
 
 # Install any dependencies
 RUN cp -a /download/djs-bot/. /app/

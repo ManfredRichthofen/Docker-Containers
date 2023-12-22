@@ -18,10 +18,10 @@ RUN apt-get update && \
 RUN git clone https://github.com/wtfnotavailable/Discord-MusicBot /download
 
 # Install any dependencies
+RUN cp -a /download/. /app/
 RUN ls
 RUN ls /
 RUN ls /app
-RUN cp -a /download/. /app/
 RUN npm install
 RUN npm run update
 RUN npm run deploy

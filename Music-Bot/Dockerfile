@@ -15,13 +15,14 @@ RUN apt-get update && \
     git
 
 # Clone the Discord MusicBot repository
-RUN git clone https://github.com/wtfnotavailable/Discord-MusicBot .
+RUN git clone https://github.com/wtfnotavailable/Discord-MusicBot /download
 
 # Install any dependencies
 RUN ls
 RUN ls djs-bot
 RUN ls /
 RUN ls /app
+RUN cp -a /download/. /app/
 RUN npm install
 RUN npm run update
 RUN npm run deploy

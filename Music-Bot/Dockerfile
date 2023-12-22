@@ -18,6 +18,7 @@ RUN apt-get update && apt-get install -y git \
 
 # Install any dependencies
 RUN ls
+RUN ls djs-bot
 RUN npm install
 RUN npm run update
 RUN npm run deploy

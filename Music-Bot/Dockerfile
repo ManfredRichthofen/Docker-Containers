@@ -19,7 +19,6 @@ RUN git clone https://github.com/wtfnotavailable/Discord-MusicBot /download
 
 # Install any dependencies
 RUN ls
-RUN ls djs-bot
 RUN ls /
 RUN ls /app
 RUN cp -a /download/. /app/

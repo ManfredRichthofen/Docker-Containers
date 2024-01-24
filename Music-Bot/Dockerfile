@@ -19,14 +19,13 @@ RUN git clone https://github.com/ManfredRichthofen/Discord-MusicBot.git /downloa
 
 # Install any dependencies
 RUN cp -a /download/djs-bot/. /app/
+ADD .env.example .env
 RUN ls
 RUN ls /
 RUN ls /app
 RUN npm install
 RUN npm run update
 RUN npm run deploy
-
-ADD .env.example .env
 
 # Set environment variables
 ENV TOKEN=your_discord_bot_token

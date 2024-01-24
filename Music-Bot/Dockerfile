@@ -19,7 +19,7 @@ RUN git clone https://github.com/ManfredRichthofen/Discord-MusicBot.git /downloa
 
 # Install any dependencies
 RUN cp -a /download/djs-bot/. /app/
-ADD .env.example .env
+RUN mv .env.example .env
 RUN ls
 RUN ls /
 RUN ls /app

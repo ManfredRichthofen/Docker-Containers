@@ -26,6 +26,8 @@ RUN npm install
 RUN npm run update
 RUN npm run deploy
 
+ADD .env.example .env
+
 # Set environment variables
 ENV TOKEN=your_discord_bot_token
 

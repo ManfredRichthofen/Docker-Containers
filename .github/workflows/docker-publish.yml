@@ -63,7 +63,7 @@ jobs:
         with:
           context: ./Music-Bot
           push: ${{ github.event_name != 'pull_request' }}
-          tags: ${{ steps.meta.outputs.tags }} ,  ghcr.io/manfredrichthofen/docker-containers:musicbot
+          tags: ${{ steps.meta.outputs.tags }} ,  ghcr.io/manfredrichthofen/docker-containers:musicbot , ghcr.io/manfredrichthofen/musicbot:latest
           labels: ${{ steps.meta.outputs.labels }}
           cache-from: type=gha
           cache-to: type=gha,mode=max

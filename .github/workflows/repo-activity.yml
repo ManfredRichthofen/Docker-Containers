@@ -1,9 +1,10 @@
 name: Date Built
 on:
-  schedule:
-    - cron: '0 0 * * 2'
-  push:
-    branches: [ "main" ]
+on:
+  workflow_run:
+    workflows: [Caddy-Cloudflare, Docker-Musicbot]
+    types:
+      - completed
 jobs:
   date:
     runs-on: ubuntu-latest

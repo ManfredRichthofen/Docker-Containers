@@ -1,6 +1,5 @@
 name: Date Built
 on:
-on:
   workflow_run:
     workflows: [Caddy-Cloudflare, Docker-Musicbot]
     types:

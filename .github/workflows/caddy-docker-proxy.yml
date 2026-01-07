@@ -57,7 +57,7 @@ jobs:
         with:
           context: ./Caddy-Docker-Proxy
           push: ${{ github.event_name != 'pull_request' }}
-          tags: ${{ steps.meta.outputs.tags }} ,  ghcr.io/manfredrichthofen/docker-containers:caddy
+          tags: ${{ steps.meta.outputs.tags }} ,  ghcr.io/manfredrichthofen/docker-containers:caddy-proxy
           labels: ${{ steps.meta.outputs.labels }}
           cache-from: type=gha
           cache-to: type=gha,mode=max
